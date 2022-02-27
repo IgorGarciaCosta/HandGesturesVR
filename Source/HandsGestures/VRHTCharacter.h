@@ -39,8 +39,8 @@ public:
 		class UMotionControllerComponent* RightMotionController;
 
 	UPROPERTY(VisibleAnywhere, Category = "Cpp Based Properties | Components", BlueprintReadWrite)
-		class UOculusHandComponent* LeftHandOculus;
+		class UMyOculusHandComponent* LeftHandOculus;
 
 	UPROPERTY(VisibleAnywhere, Category = "Cpp Based Properties | Components", BlueprintReadWrite)
-		class UOculusHandComponent* RightHandOculus;
+		class UMyOculusHandComponent* RightHandOculus;
 };

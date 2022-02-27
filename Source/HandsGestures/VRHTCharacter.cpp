@@ -3,6 +3,7 @@
 
 #include "VRHTCharacter.h"
 #include "Camera/CameraComponent.h"
+#include "MyOculusHandComponent.h"
 #include "OculusHandComponent.h"
 
 
@@ -21,10 +22,10 @@ AVRHTCharacter::AVRHTCharacter()
 	RightMotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("RightMotionController"));
 	RightMotionController->SetupAttachment(RootComponent);
 
-	LeftHandOculus = CreateDefaultSubobject<UOculusHandComponent>(TEXT("LeftHandOculus"));
+	LeftHandOculus = CreateDefaultSubobject<UMyOculusHandComponent>(TEXT("LeftHandOculus"));
 	LeftHandOculus->SetupAttachment(LeftMotionController);
 
-	RightHandOculus = CreateDefaultSubobject<UOculusHandComponent>(TEXT("RightHandOculus"));
+	RightHandOculus = CreateDefaultSubobject<UMyOculusHandComponent>(TEXT("RightHandOculus"));
 	RightHandOculus->SetupAttachment(RightMotionController);
 
 }
