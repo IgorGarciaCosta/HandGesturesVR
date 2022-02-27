@@ -22,11 +22,11 @@ AVRHTCharacter::AVRHTCharacter()
 	RightMotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("RightMotionController"));
 	RightMotionController->SetupAttachment(RootComponent);
 
-	LeftHandOculus = CreateDefaultSubobject<UMyOculusHandComponent>(TEXT("LeftHandOculus"));
+	/*LeftHandOculus = CreateDefaultSubobject<UMyOculusHandComponent>(TEXT("LeftHandOculus"));
 	LeftHandOculus->SetupAttachment(LeftMotionController);
 
 	RightHandOculus = CreateDefaultSubobject<UMyOculusHandComponent>(TEXT("RightHandOculus"));
-	RightHandOculus->SetupAttachment(RightMotionController);
+	RightHandOculus->SetupAttachment(RightMotionController);*/
 
 }
 
