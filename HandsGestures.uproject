@@ -13,5 +13,12 @@
 				"OculusInput"
 			]
 		}
+	],
+	"Plugins": [
+		{
+			"Name": "TelegramMessage",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/2bb60d1f6f4842ee846ca03117700d8c"
+		}
 	]
 }
