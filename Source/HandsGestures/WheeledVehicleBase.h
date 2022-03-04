@@ -22,6 +22,9 @@ public:
 
 	// Default Sub Objects
 	UPROPERTY(EditAnywhere)
+		class USceneComponent* CamAndHandsRoot;
+
+	UPROPERTY(EditAnywhere)
 		class UCameraComponent* PlayerCamera;
 
 	UPROPERTY(VisibleAnywhere, Category = "Cpp Based Properties | Components")
