@@ -16,9 +16,9 @@ AWheeledVehicleBase::AWheeledVehicleBase()
 	PlayerCamera->SetupAttachment(RootComponent);
 
 	LeftMotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("LeftMotionController"));
-	LeftMotionController->SetupAttachment(PlayerCamera);
+	LeftMotionController->SetupAttachment(RootComponent);
 
 	RightMotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("RightMotionController"));
-	RightMotionController->SetupAttachment(PlayerCamera);
+	RightMotionController->SetupAttachment(RootComponent);
 }
 
