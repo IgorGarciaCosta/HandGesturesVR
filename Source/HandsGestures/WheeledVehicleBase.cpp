@@ -14,6 +14,7 @@ AWheeledVehicleBase::AWheeledVehicleBase()
 	PrimaryActorTick.bCanEverTick = true;
 
 	CamAndHandsRoot = CreateDefaultSubobject<USceneComponent>("CamAndHandsRoot");
+	CamAndHandsRoot->SetupAttachment(GetRootComponent());
 
 	PlayerCamera = CreateDefaultSubobject<UCameraComponent>("PlayerCamera");
 	PlayerCamera->SetupAttachment(CamAndHandsRoot);
