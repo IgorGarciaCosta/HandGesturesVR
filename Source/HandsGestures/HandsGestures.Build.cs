@@ -16,7 +16,8 @@ public class HandsGestures : ModuleRules
 			"HeadMountedDisplay",
 			"Slate",
 			"SlateCore",
-			"OculusInput"});
+			"OculusInput",
+			"OpenSSL"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
