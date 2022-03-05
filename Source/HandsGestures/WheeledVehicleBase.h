@@ -20,6 +20,9 @@ public:
 
 	AWheeledVehicleBase();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Variables")
+		bool bControlGestureActivated = false;
+
 	// Default Sub Objects
 	UPROPERTY(EditAnywhere)
 		class USceneComponent* CamAndHandsRoot;
