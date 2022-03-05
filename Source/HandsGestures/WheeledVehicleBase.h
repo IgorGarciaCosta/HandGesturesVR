@@ -35,4 +35,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Cpp Based Properties | Components")
 		class UMotionControllerComponent* RightMotionController;
+
+	UFUNCTION(BlueprintCallable)
+		void ExecuteExternalFile();
 };

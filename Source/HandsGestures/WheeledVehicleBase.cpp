@@ -5,6 +5,8 @@
 #include "Camera/CameraComponent.h"
 #include "Components/SceneComponent.h"
 #include "MyOculusHandComponent.h"
+#include "Engine/Engine.h"
+#include "GenericPlatform/GenericPlatformProcess.h"
 #include "OculusHandComponent.h"
 
 AWheeledVehicleBase::AWheeledVehicleBase()
@@ -24,5 +26,13 @@ AWheeledVehicleBase::AWheeledVehicleBase()
 
 	RightMotionController = CreateDefaultSubobject<UMotionControllerComponent>(TEXT("RightMotionController"));
 	RightMotionController->SetupAttachment(CamAndHandsRoot);
+}
+
+void AWheeledVehicleBase::ExecuteExternalFile()
+{//C:\Users\ISILV125\AppData\Local\CiscoSparkLauncher
+	FPlatformProcess::CreateProc(TEXT("C:\\Users\\ISILV125\\AppData\\Local\\CiscoSparkLauncher\\CiscoCollabHost"), nullptr, true, false, false, nullptr, 0, nullptr, nullptr);
+	//FPlatformProcess::CreateProc(TEXT("C:\\Users\\Cero\\Desktop\\Test.exe"), nullptr, true, false, false, nullptr, 0, nullptr, nullptr);
+	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Blue, "FUNCTION CALLED");
+
 }
 
